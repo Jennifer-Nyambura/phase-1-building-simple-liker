@@ -1,4 +1,4 @@
-// Defining text characters for the empty and full hearts for you to use later.
+ // Defining text characters for the empty and full hearts for you to use later.
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
@@ -23,3 +23,7 @@ function mimicServerCall(url="http://mimicServer.example.com", config={}) {
     }, 300);
   });
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("modal");
+  console.log(modal); // Should NOT log null
+});
